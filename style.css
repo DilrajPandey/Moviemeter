@@ -2,7 +2,7 @@ body{
     display: grid;
     justify-content: center;
     margin: 100px 0px 0px 0px;
-    background: linear-gradient(45deg,rgb(24, 24, 82),rgb(62, 2, 62));
+    background: linear-gradient(45deg,rgb(245, 176, 112),rgb(239, 176, 199));
     
 }
 h1{
@@ -18,5 +18,35 @@ h1{
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
+}
+#container{
+    border: 2px solid;
+    height: 230px;
+    width: 415px;
+    margin: 0px 0px 0px 15px;
+}
+.allbutton{
+    height:40px;
+    width: 405px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    background-color: rgb(230, 231, 216);
+}
+#option1{
+    margin: 5px;
+}
+#option2{
+    margin: 5px;
+}
+#option3{
+    margin: 5px;
+}
+#option4{
+    margin: 5px;
+}
+#option5{
+    margin: 5px;
 }
 /*yet to complete  */
