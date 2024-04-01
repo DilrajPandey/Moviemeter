@@ -21,6 +21,53 @@
             <button id="option5" class="allbutton">option5</button>
         </div>
     </main>
-    
+     <script>
+        const options = {method: 'GET', headers: {accept: 'application/json'}};
+
+        fetch('https://api.themoviedb.org/3/authentication', options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+        // const options = {
+	    //     method: 'GET',
+	    //     headers: {
+		//         'X-RapidAPI-Key': '771bc722b2mshc6d7f2d106b0423p12d74cjsnacf0e97aa941',
+		//         'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
+	    //     }
+        // };
+        // const userInput = document.querySelector('.input');
+        // const btn = document.querySelector('.btn');
+
+        // let params = ''
+        // const callParams = () => {  //fetch only works when the search button is pressed
+        //     params = userInput.value //give the input value
+        //     const url = `https://anime-db.p.rapidapi.com/anime?page=50&size=50&genres=${params}`;
+
+        //     fetch(url, options)
+        //     .then(response => 
+        //         response.json()
+        //     )
+        //     .then(result => {
+        //         const list = result.data;
+        //         list.map((item) => {
+        //             const name = item.title;
+        //             const poster = item.image.imageUrl;
+        //             const gernes = item.genres;
+        //             console.log('Genres:', genres);
+        //             const movie = `<li><img src="${poster}"> <h2>${name}</h2> <h6>${genres.join(', ')}</h6> </li>`
+        //             document.querySelector('#container').innerHTML += movie;
+        //             //console.log(item)
+        //         })
+        //     })
+        //     .catch(error => {
+        //         console.error(error);
+        //     });
+        //     userInput.value = ''; //set the userInput empty after the search button is pressed
+
+        // }
+        // btn.addEventListener('click', () => {
+        // })
+
+    </script>
 </body>
 </html>
