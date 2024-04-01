@@ -8,7 +8,7 @@ body{
 h1{
     height: 30px;
     width: 430px;
-    border-radius: 8%;
+    border-radius: 12px;
     text-align: center;
     background-color: aqua;
     padding: 10px;
@@ -20,12 +20,49 @@ h1{
     font-weight: bold;
 }
 #container{
-    border: 2px solid;
+/*     border: 2px solid;
     height: 230px;
-    width: 415px;
+    width: 415px; */
+    width: 70%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
     margin: 0px 0px 0px 15px;
 }
-.allbutton{
+#container li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: #f935f9;
+}
+#container li h2{
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 10px 0px;
+    margin-top: auto;
+    font-family: "Oswald", sans-serif;
+}
+.btn{
+    margin-left: 40px;
+    padding: 2px;
+    width: 70px;
+    border-radius: 0.7em;
+    color: #fff;
+    background-color: green;
+}
+.input{
+    margin-left: 180px;
+    padding: 2px;
+    border-radius: 0.5em;
+
+}
+/* .allbutton{
     height:40px;
     width: 405px;
     border: 1px solid;
@@ -48,5 +85,5 @@ h1{
 }
 #option5{
     margin: 5px;
-}
+} */
 /*yet to complete  */
