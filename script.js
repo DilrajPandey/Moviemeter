@@ -28,3 +28,4 @@ async function searchMovies(){
         imageWrapper.classList.add("search-result")
     })
 }
+//More functionalities is to be added soon
