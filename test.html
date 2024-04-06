@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Movies</title>
+    <style>
+        /* Add your custom styles here */
+        .movie-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            max-width: 300px;
+        }
+        .movie-poster {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Movies</h1>
+    <div id="movie-list">
+        <div><img src="" alt=""><h2></h2><p>release date</p></div>
+        <div><img src="" alt=""><h2></h2><p>release date</p></div>
+        <div><img src="" alt=""><h2></h2><p>release date</p></div>
+    </div>
+
+    <script>
+        const apiKey = '7ac57520dbf0850668deb7c9be8fc2bd';
+        const apiUrl = 'https://api.themoviedb.org/3/movie/upcoming?api_key=' + apiKey;
+
+        async function fetchUpcomingMovies() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                const movies = data.results;
+
+                const movieList = document.getElementById('movie-list');
+                movies.forEach((movie) => {
+                    const card = document.createElement('div');
+                    card.classList.add('movie-card');
+
+                    const img = document.createElement('img');
+                    img.src = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
+                    img.alt = movie.title;
+                    img.classList.add('movie-poster');
+                    card.appendChild(img);
+
+                    const title = document.createElement('h2');
+                    title.textContent = movie.title;
+                    card.appendChild(title);
+
+                    const releaseDate = document.createElement('p');
+                    releaseDate.textContent = 'Release Date: ' + movie.release_date;
+                    card.appendChild(releaseDate);
+
+                    movieList.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error fetching movie data:', error);
+            }
+        }
+
+        fetchUpcomingMovies();
+    </script>
+</body>
+</html>

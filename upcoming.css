@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-/* Other styles go here */
 body{
     line-height: 1.6;
     background: linear-gradient(45deg, rgb(6, 37, 99), rgb(59, 2, 53));
@@ -18,41 +17,8 @@ h1{
     text-align: center;
     margin: 40px 0 35px 0;
 }
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
 
-}
-p{
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 12px;
-}
-#search-input{
-    width: 60%;
-    max-width: 400px;
-    padding: 10px 20px;
-    border: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    font-size: 18px;
-    color: #333;
-}
-#search-button{
-    padding: 10px 20px;
-    background-color: #138065;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-.search-results{
+#search-results{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -60,56 +26,47 @@ p{
     margin: 0 auto;
 }
 .search-result{
-    margin-bottom: 60px;
-    width: 30%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    overflow: hidden;
-    background-color: #313030;
-}
-.search-result img{
-    width: 370px;
-    height: 220px;
-    object-fit: cover;
-    transition: opacity 0.2s ease-in-out; /*-->for smooth hover effect in next step*/
-}
-
-.search-result:hover img{  /*-->hover krne pr kya effect aaiga */
-    opacity: 0.8;
-}
-.cards{
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     max-width: 300px;
 }
-.movie-image{
+.movie-poster {
     max-width: 100%;
     height: auto;
 }
-.aLink{
+.movie-poster:hover {
+    opacity: 0.8;
+}
+.search-result a{
     height: auto;
     font-size: 20px;
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
     text-transform: capitalize;
 }
  a:hover {  /*-->hover krne pr kya effect aaiga */
     text-decoration: underline;
     color: aqua;
 }
-.overview{
+p{
     display: flex;
     justify-content: start;
-    align-self: center;
-    border-radius: 6px;
-    font-size: 15px;
+    font-size: medium;
     color: #dcd9d9;
     padding: 4px;
     
+}
+span{
+    border: 1px solid white;
+    color: black;
+    background-color: greenyellow;
+    font-size: 13px;
+    margin-left: 5px;
+    padding: 0 2px;
+    font-weight: bold;
 }
 .btn{
     position: fixed;
