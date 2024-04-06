@@ -7,15 +7,6 @@
     font-family: "Poppins", sans-serif;
 }
 /* Other styles go here */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-/* Other styles go here */
 body{
     line-height: 1.6;
     background: linear-gradient(45deg, rgb(6, 37, 99), rgb(59, 2, 53));
@@ -25,7 +16,7 @@ h1{
     font-weight: bold;
     color: antiquewhite;
     text-align: center;
-    margin: 40px 0 35px 0;
+    margin: 35px 0 30px 0;
 }
 form{
     display: flex;
@@ -40,12 +31,6 @@ p{
     align-items: center;
     margin-bottom: 25px;
 
-}
-p{
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 12px;
 }
 #search-input{
     width: 60%;
@@ -84,6 +69,10 @@ p{
     overflow: hidden;
     background-color: #313030;
 }
+#para{
+    text-align: center;
+    font-size: 35px;
+}
 .search-result img{
     width: 370px;
     height: 220px;
@@ -108,17 +97,11 @@ p{
 }
 .aLink{
     height: auto;
-.movie-image{
-    max-width: 100%;
-    height: auto;
-}
-.aLink{
-    height: auto;
     font-size: 20px;
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
     text-transform: capitalize;
 }
  a:hover {  /*-->hover krne pr kya effect aaiga */
