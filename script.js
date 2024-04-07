@@ -50,9 +50,13 @@ async function searchMovies() {
                     genresEl.textContent = `Genres: ${genres}`;
                     genresEl.classList.add('overview');
 
+                    const voteAverage = document.createElement('span');
+                    voteAverage.textContent = 'Rating: ' + movie.vote_average;
+                    
                     imageWrapper.appendChild(img);
                     imageWrapper.appendChild(imageLink);
                     imageWrapper.appendChild(genresEl);
+                    imageWrapper.appendChild(voteAverage);
                     searchResults.appendChild(imageWrapper);
                 }
             //})

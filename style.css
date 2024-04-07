@@ -9,7 +9,7 @@
 /* Other styles go here */
 body{
     line-height: 1.6;
-    background: linear-gradient(45deg, rgb(6, 37, 99), rgb(59, 2, 53));
+    background: linear-gradient(45deg, rgb(1, 22, 63), rgb(51, 0, 46));
 }
 h1{
     font-size: 46px;
@@ -55,7 +55,7 @@ p{
 }
 .search-results{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -64,10 +64,16 @@ p{
     margin-bottom: 60px;
     width: 30%;
     height: 100%;
+    border: 1.5px solid wheat;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0,0,0,0.2);
     overflow: hidden;
     background-color: #313030;
+    transition: 1s;
+}
+.search-result:hover{
+    transform: scale(1.1);
+    z-index: 2;
 }
 #para{
     text-align: center;
@@ -87,9 +93,14 @@ p{
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
+    margin-bottom: 60px;
     max-width: 300px;
-    margin: 10px;
-    max-width: 300px;
+    box-shadow: 0.5px 0 20px rgba(255, 255, 255,0.6);
+    transition: 1s;
+}
+.cards:hover{
+    transform: scale(1.1);
+    z-index: 2;
 }
 .movie-image{
     max-width: 100%;
@@ -104,7 +115,7 @@ p{
     padding: 0 0 0 5px;
     text-transform: capitalize;
 }
- a:hover {  /*-->hover krne pr kya effect aaiga */
+a:hover {  /*-->hover krne pr kya effect aaiga */
     text-decoration: underline;
     color: aqua;
 }
@@ -117,6 +128,15 @@ p{
     color: #dcd9d9;
     padding: 4px;
     
+}
+span{
+    border: 1px solid white;
+    color: black;
+    background-color: greenyellow;
+    font-size: 13px;
+    margin-left: 5px;
+    padding: 0 2px;
+    font-weight: bold;
 }
 .btn{
     position: fixed;
