@@ -25,6 +25,10 @@ async function fetchData() {
             genreDiv.addEventListener('click', async () => {
                 const selectedGenreId = genreDiv.getAttribute('data-id');
                 await fetchMoviesByGenre(selectedGenreId);
+                window.scrollTo({
+                    top: 1030,
+                    behavior: "smooth"
+                })
             });
         });
     } catch (error) {
