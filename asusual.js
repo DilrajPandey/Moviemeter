@@ -67,7 +67,7 @@ async function fetchMoviesByGenre(genreId) {
             imageWrapper.appendChild(img);
             imageWrapper.appendChild(imageLink);
             imageWrapper.appendChild(voteAverage);
-            genreBlock.appendChild(imageWrapper);
+            movieList.appendChild(imageWrapper);
         });
     } catch (error) {
         console.error('Error fetching movies:', error);
