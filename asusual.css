@@ -26,6 +26,7 @@ p{
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 .genre{
     height: 80px;
@@ -42,7 +43,7 @@ p{
     border-radius: 50px;
     cursor: pointer;
     transition: 0.5s;
-    margin: 0 5px 20px 5px;
+    margin: 0 5px 45px 5px;
 }
 .genre:hover {
     color: black;
