@@ -157,6 +157,52 @@ span{
     height: 80px;
     border-radius: 50%;
 }
+.suggest{
+    color: #fff;
+    width: 1000px;
+    text-align: center;
+    font-size: 35px;
+    margin: auto auto 30px 150px;
+}
+.forum{
+    max-width: 500px;
+    height: 650px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-bottom: 40px;
+    border: 1px solid white;
+    padding: 10px auto 10px auto;
+    box-shadow: 2px 2px 15px rgb(0, 162, 255);
+}
+h3{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+.fillings{
+    margin: 10px auto 20px 30px;
+    color: black;
+    font-size: 20px;
+}
+#long-message, #name, #em , #sub{
+    background-color: white;
+    width: 430px;
+}
+.bttns{
+    display: flex;
+    margin-top: 20px;
+    
+}
+#reset, .submit{
+    margin-left: 10px;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+
 @media screen and (max-width: 768px) {  /*--> to make it responsive*/
     .search-results{
         padding: 20px;

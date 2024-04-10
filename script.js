@@ -9,6 +9,11 @@ const searchResults = document.querySelector(".search-results");
 const paraMsg = document.getElementById("para");
 const textt = document.querySelectorAll('a');
 const genreview = document.querySelector('.overview');
+const resett = document.getElementById("reset");
+const txt = document.getElementById("name");
+const subj = document.getElementById("sub");
+const email = document.getElementById("em");
+const txtArea = document.getElementById("long-message");
 
 let inputData = ""
 let page = 1
@@ -125,8 +130,9 @@ searchForm.addEventListener('submit', (event) => {
     paraMsg.style.display = "none";
     searchMovies();
 });
-
-// showMore.addEventListener("click", () => {
-//     const inputData = searchInput.value;
-//     searchMovies();
-// });
+resett.addEventListener('click', () => {
+    txt.value = "";
+    txtArea.value = "";
+    email.value = "";
+    subj.value = "";
+})
