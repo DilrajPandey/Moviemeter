@@ -14,6 +14,8 @@ const txt = document.getElementById("name");
 const subj = document.getElementById("sub");
 const email = document.getElementById("em");
 const txtArea = document.getElementById("long-message");
+const forum = document.querySelector(".forum");
+
 
 let inputData = ""
 let page = 1
@@ -31,6 +33,7 @@ async function searchMovies() {
 
         if(page==1){ //starts from page 1
             searchResults.innerHTML = "" //for the 1st page the inner html set to be empty
+            forum.innerHTML = "" //for the 1st page the inner html set to be empty
         }
         results.map((movie) => {
             //results.forEach((movie) => {
@@ -70,11 +73,7 @@ async function searchMovies() {
         searchInput.value = ''; //set the userInput empty after the search button is pressed
         page++;
 
-        // if (results.length > 0) {
-        //     showMore.style.display = "block";
-        // } else {
-        //     showMore.style.display = "none";
-        // }
+       
 
     } catch (error) {
         console.error('Error fetching movie data:', error);
